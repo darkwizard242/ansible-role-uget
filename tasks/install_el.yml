@@ -1,0 +1,8 @@
+---
+# tasks file for uget - EL
+
+- name: EL Family | Installing {{ uget_app }}
+  yum:
+    name: "{{ uget_app }}"
+    state: "{{ uget_desired_state }}"
+    update_cache: yes
