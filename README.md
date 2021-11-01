@@ -2,7 +2,7 @@
 
 # Ansible Role: uget
 
-Role to install (_by default_) [uget](https://ugetdm.com/) package or uninstall (_if passed as var_) on **Ubuntu** and **CentOS** systems. **uget** is a multi-platform open source download manager.
+Role to install (_by default_) [uget](https://ugetdm.com/) package or uninstall (_if passed as var_) on **Debian/Ubuntu** and **EL** systems. **uget** is a multi-platform open source download manager.
 
 ## Requirements
 
