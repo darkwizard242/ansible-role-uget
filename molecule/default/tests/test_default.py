@@ -7,7 +7,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 PACKAGE = 'uget'
-PACKAGE_BINARY = '/usr/bin/uget'
+PACKAGE_BINARY = '/usr/bin/uget-gtk'
 
 
 def test_uget_package_installed(host):
@@ -35,4 +35,4 @@ def test_uget_binary_which(host):
     """
     Tests the output to confirm uget's binary location.
     """
-    assert host.check_output('which uget') == PACKAGE_BINARY
+    assert host.check_output('which uget-gtk') == PACKAGE_BINARY
