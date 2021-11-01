@@ -1,0 +1,9 @@
+---
+# tasks file for uget - Debian/Ubuntu Family
+
+- name: Debian/Ubuntu Family | Installing {{ uget_app }}
+  apt:
+    name: "{{ uget_app }}"
+    state: "{{ uget_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
