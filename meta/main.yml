@@ -1,0 +1,31 @@
+---
+galaxy_info:
+  role_name: uget
+  author: darkwizard242
+  description: Role for dynamically installing or uninstalling 'uget' package. 'uget' is an open source download manager.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 7
+
+  galaxy_tags:
+    - uget
+    - system
+    - os
+    - downloader
+    - downloadmanager
+
+dependencies: []

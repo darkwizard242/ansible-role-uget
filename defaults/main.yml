@@ -1,0 +1,5 @@
+---
+# defaults file for uget
+
+uget_app: uget
+uget_desired_state: present
