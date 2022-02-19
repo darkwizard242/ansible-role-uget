@@ -10,14 +10,14 @@ jobs:
   release:
 
     name: Release
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
 
     steps:
 
     - name: Checkout source code
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
       with:
-        path: 'darkwizard242.unzip'
+        path: 'darkwizard242.uget'
 
     - name: Set up Python 3.10.0
       uses: actions/setup-python@v2
@@ -31,4 +31,5 @@ jobs:
         pip3 install -U pip wheel ansible
 
     - name: Import to Ansible Galaxy.
+      working-directory: 'darkwizard242.uget'
       run: ansible-galaxy role import --api-key ${{ secrets.GALAXY_API_KEY }} ${{ github.repository_owner }} $(echo ${{ github.repository }} | sed 's/.*\///')
